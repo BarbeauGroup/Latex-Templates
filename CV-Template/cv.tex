@@ -1,0 +1,195 @@
+% cv-us.tex
+% $Id: cv-us.tex,v 1.28 2006/12/12 22:53:52 jrblevin Exp $
+%
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2006 Jason Blevins
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents, however, I do ask that you
+% please leave this notice and the above URL in the source code if you
+% choose to redistribute this file.
+%
+% Jason R. Blevins <jrblevin@sdf.lonestar.org>
+% http://jrblevin.freeshell.org
+% Durham, December 12, 2006
+%
+%%---------------------------------------------------------------------------%
+%
+% Notes:
+%
+% * Don't forget to change `pdfauthor' and `keywords' in the \hypersetup
+%   section below.
+%
+% * To create a new page use: \newpage \opening
+%
+% * res.cls includes an \address{} command which can be used up to twice,
+%   but my address is too long for the format it uses.
+%
+% * Alternate documentclass statement to put headings in margin:
+%   \documentclass[margin,line,11pt,final]{res}
+%
+% * Can divide publication/presentation list into subsections by year:
+%   \section{\bf\small\hspace{8mm}2006}
+%
+%%----------------------------------------------------------------------------%
+
+\documentclass[overlapped,line,letterpaper]{res}
+
+
+\usepackage{ifpdf}
+\usepackage{scrextend}
+\ifpdf
+  \usepackage[pdftex]{hyperref}
+\else
+  \usepackage[hypertex]{hyperref}
+\fi
+\usepackage{multicol}
+
+\hypersetup{
+  letterpaper,
+  colorlinks,
+  urlcolor=black,
+  pdfpagemode=none,
+  pdftitle={Curriculum Vitae},
+  pdfauthor={First Last},
+  pdfcreator={$ $Id: cv-us.tex,v 1.28 2006/12/12 22:53:52 jrblevin Exp $ $},
+  pdfsubject={Curriculum Vitae},
+  pdfkeywords={physics neutrinos}
+}
+
+%%===========================================================================%%
+
+\begin{document}
+
+%---------------------------------------------------------------------------
+% Document Specific Customizations
+
+% Make lists without bullets and with no indentation
+\setlength{\leftmargini}{0em}
+\renewcommand{\labelitemi}{}
+
+% Use large bold font for printed name at top of pages
+%\renewcommand{\namefont}{\large\textbf}
+
+%---------------------------------------------------------------------------
+
+\name{First M Last}
+
+\begin{resume}
+
+\begin{tabular}{p{3in}p{3in}}
+  Duke University Department of Physics       & Phone: (919) 660-XXXX \\
+  Physics Building, Science Drive, Box 90305                  & Cell: \\
+  Durham, NC 27708	               &  {\tt name@phy.duke.edu}\\
+  Office: TUNL 426			& {\tt http://sites.duke.edu/barbeaugroup}\\
+\end{tabular}
+%---------------------------------------------------------------------------
+\section{\textbf{Research Focus}}
+\begin{tabular}{l}
+In my research, I focus on ...
+
+
+\end{tabular}
+\section{\bf Education and Training}
+\begin{tabular}{p{1.3in}p{4.75in}}
+2009--2013 & Post-Doctoral Scholar, Third University\\
+2002--2009 & Ph.D. Physics, Second University\\
+2001 & B.A. Physics, First University\\
+\end{tabular}
+
+\section{\bf Research and Professional Experience}
+\begin{tabular}{p{1.3in}p{4.75in}}
+July 1, 2019 -- present& Associate Professor, Duke University\\
+July 1, 2013 -- 2019& Assistant Professor, Duke University\\
+July 1, 2013 -- present& Assistant Professor, Duke University\\
+Aug., 2014 -- present& Adjunct Professor, University of North Carolina, Chapel Hill\\
+Oct., 2018 -- present& Adjunct Professor, North Carolina State University\\
+\end{tabular}
+
+
+
+\textbf{Ph.D. Advisor: } Professor J. I. Collar, University of Chicago.
+\textbf{Postdoctoral Mentor:} Professor Giorgio G. Gratta, Stanford University
+
+
+%%---------------------------------------------------------------------------
+\section{\textbf{Awards and Honors}}
+\begin{tabular}{p{1in}p{4.75in}}
+year & Award\\
+\end{tabular}
+
+%
+%%---------------------------------------------------------------------------
+\section{\textbf{Current Leadership Positions}}
+\begin{itemize}
+\item $\bullet$  position
+\end{itemize}
+%---------------------------------------------------------------------------
+
+\section{\textbf{\normalsize Synergistic Activities}}
+\begin{itemize}
+\item $\bullet$ organizer
+\item $\bullet$ coordinator
+\end{itemize}
+%%---------------------------------------------------------------------------
+\section{\textbf{Collaborations and Other Affiliations}}
+\begin{itemize}
+\item $\bullet$ COHERENT Collaboration \url{http://coherent.ornl.gov}
+\item $\bullet$ Member of the Triangle Universities Nuclear Laboratory: \url{http://www.tunl.duke.edu/}
+\end{itemize}
+%
+%%---------------------------------------------------------------------------
+
+\newpage
+\section{\textbf{Invited Presentations}}
+~\\
+\\
+\begin{enumerate}
+\item ``Second Talk,'' NuFact 2018, Blacksburg, VA, 2018.
+\item ``First Talk,'' Rencontres de Blois, Blois, France, 2018.
+
+
+\end{enumerate}
+
+%\newpage
+
+\section{\textbf{\normalsize Selected Publications}}
+\begin{enumerate}
+	\item R. A. Weldon, J. M. Mueller, J. K. Mattingly, C. Lynch, P. S. Barbeau, S. Hedges, C. Awe, L. Li, P. Schuster, ``High-precision characterization of the neutron light output of stilbene along the directions of maximum and minimum response,'' Nuclear Instruments and Methods in Physics Research A (2018). \url{http://doi.org/10.1016/j.nima.2018.10.075}
+
+	
+\end{enumerate}
+
+%\newpage
+%
+\section{\textbf{In the Press}}
+
+	$\bullet$ ``Duke scientists find proof that neutrinos killed the dinosaurs,'' author, September 24, 2017. \emph{The Chronicle}. %\url{http://www.dukechronicle.com/article/2017/08/duke-scientists-find-proof-of-elusive-neutrino-phenomenon}
+%
+
+%------------------------------------------------------------------------------
+
+%\section{\bf Presentations}
+%
+%``Solving Nonlinear Wave Equations with Mathematica,''
+%North Carolina State University, April 23, 2003.
+
+%---------------------------------------------------------------------------
+
+
+%%---------------------------------------------------------------------------%%
+
+\begin{center}
+%\vspace{\fill}\ \newline
+%{\tiny \rm $ $RCSfile: cv-us.tex,v $ $ }
+%{\tiny \rm $ $Date: 2006/12/12 22:53:52 $ $ }
+%\tiny \rm $ $Revision: 1.28 $ $ }
+\end{center}
+
+\end{resume}
+
+\end{document}
+
+%%===========================================================================%%
